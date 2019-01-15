@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "101916571502",
+    "firebase_url": "https://berita-jatim.firebaseio.com",
+    "project_id": "berita-jatim",
+    "storage_bucket": "berita-jatim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101916571502:android:f8f5c53c719bd9b4",
+        "android_client_info": {
+          "package_name": "com.bekkostudio.beritajatim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101916571502-du561ke7728tnhu2hh52c5g22qoi6v93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBivnYz8yiezud2zA7H6-m-Bx5u-6Gk4bk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
