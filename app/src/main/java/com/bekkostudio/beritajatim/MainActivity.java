@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         smartWebViewCompact.ASWP_SPLASH      = true;    //enable splash screen
 
         //Configuration variables
-        smartWebViewCompact.ASWV_URL          = "https://beritajatim.com"; //complete URL of your website or webpage
+        smartWebViewCompact.ASWV_URL          = "http://beritajatim.com/"; //complete URL of your website or webpage
         smartWebViewCompact.ASWV_F_TYPE       = "*/*";  //to upload any file type using "*/*"; check file type references for more
 
         //Rating system variables
@@ -54,11 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
         WebView webView = (WebView) findViewById(R.id.msw_view);
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.msw_progress);
-        RelativeLayout splashScreen = (RelativeLayout) findViewById(R.id.logosplash); //logosplash or fullsplash
+        RelativeLayout splashScreen = (RelativeLayout) findViewById(R.id.fullsplash); //logosplash or fullsplash
 
 
-        if (getIntent().getExtras() != null) {
-            smartWebViewCompact.ASWV_URL = getIntent().getStringExtra("link");
+        if (getIntent().getStringExtra("link")!=null) {
+            if (getIntent().getStringExtra("link").length()>5){
+                smartWebViewCompact.ASWV_URL = getIntent().getStringExtra("link");
+            }
         }
 
         smartWebViewCompact.onCreate(this,webView,progressBar,splashScreen);
