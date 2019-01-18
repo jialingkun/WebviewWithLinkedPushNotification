@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         smartWebViewCompact.ASWP_LOCATION    = false;     //track GPS locations
         smartWebViewCompact.ASWP_RATINGS     = false;     //show ratings dialog; auto configured, edit method get_rating() for customizations
         smartWebViewCompact.ASWP_PBAR        = true;     //show progress bar in app
-        smartWebViewCompact.ASWP_ZOOM        = false;    //zoom control for webpages view
+        smartWebViewCompact.ASWP_ZOOM        = true;    //zoom control for webpages view
         smartWebViewCompact.ASWP_SFORM       = true;    //save form cache and auto-fill information
         smartWebViewCompact.ASWP_OFFLINE     = false;    //whether the loading webpages are offline or online
         smartWebViewCompact.ASWP_EXTURL      = true;     //open external url with default browser instead of app webview

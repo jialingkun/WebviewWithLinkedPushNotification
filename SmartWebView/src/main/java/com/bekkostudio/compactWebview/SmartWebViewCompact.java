@@ -184,6 +184,8 @@ public class SmartWebViewCompact {
         }
         webSettings.setSaveFormData(ASWP_SFORM);
         webSettings.setSupportZoom(ASWP_ZOOM);
+        webSettings.setBuiltInZoomControls(ASWP_ZOOM);
+        webSettings.setDisplayZoomControls(false);
         webSettings.setGeolocationEnabled(ASWP_LOCATION);
         webSettings.setAllowFileAccess(true);
         webSettings.setAllowFileAccessFromFileURLs(true);
